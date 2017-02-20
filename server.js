@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express();
-const PORT = process.env.PORT || 3300;
+const PORT = process.env.PORT || 3330;
 
 app.use(function(req, res, next){
     if(req.headers['x-forwarded-proto'] === 'https'){
