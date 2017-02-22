@@ -1,0 +1,15 @@
+.main-form{
+  margin-top: 60px;
+}
+.tabs {
+  margin-bottom: 15px;
+}
+.tabs-title {
+  width: 50%;
+  text-align: center;
+  transition: box-shadow 0.5s, border-color 0.25s;
+  box-shadow: $boxShadow;
+    & > a {
+      font-size: 1.15rem;
+    }
+}
