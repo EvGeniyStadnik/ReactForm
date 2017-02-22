@@ -7,7 +7,7 @@ class SignInForm extends React.Component{
     }
 
     onFormSubmit = (e) => {
-        if (!this.refs.name.search[0].value || !this.refs.email.value || !this.refs.password.value){
+        if (!this.refs.name.search[0].value || !this.refs.usermessage.value || !this.refs.password.value){
             e.preventDefault();
             alert('Please fill all fields')
         }
@@ -25,15 +25,15 @@ class SignInForm extends React.Component{
                             displayKey="name"
                             indices={[{index: 'ideals-people-energy'}]}
                             inputId="input-search"
-                            placeholder="You name (algolia search)"
+                            placeholder="Your name (algolia search)"
                             ref="name"
                         />
                     </div>
                     <div>
-                        <input ref="email" type="email" name="new_user[email_confirmation]" placeholder="You email"/>
+                        <input ref="password" type="password" name="user_password" placeholder="Your password"/>
                     </div>
                     <div>
-                        <input ref="password" type="password" name="new_user[password]" placeholder="Your password"/>
+                        <textarea ref="usermessage" name="user_message" placeholder="Enter your message"></textarea>
                     </div>
                     <div>
                         <button className='button expanded'>Sign in</button>

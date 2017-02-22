@@ -17,13 +17,13 @@ class RegisterForm extends React.Component{
             <div>
                 <form onSubmit={this.onFormSubmit} action="http://example.org" method="post">
                     <div>
-                        <input ref="name" type="text" name="new_user[name]" placeholder="You name"/>
+                        <input ref="name" type="text" name="new_user[name]" placeholder="Your name"/>
                     </div>
                     <div>
                         <input ref="username" type="text" name="new_user[username]" placeholder="Your Username"/>
                     </div>
                     <div>
-                        <input ref="email" type="email" name="new_user[email_confirmation]" placeholder="You email"/>
+                        <input ref="email" type="email" name="new_user[email_confirmation]" placeholder="Your email"/>
                     </div>
                     <div>
                         <input ref="password" type="password" name="new_user[password]" placeholder="Your password"/>
